@@ -99,22 +99,25 @@ function envoyer(event){
     }else{
     document.querySelector('#message').style.border= '4px solid green '
     }
-
     var agree = document.querySelector('#agree') 
     var read = document.querySelector('#read')
     var divFlex =  document.querySelector('.conditions')
     if(!agree.checked || !read.checked){
     alert('accepter les deux conditions ')
-    // divFlex.setAttribute('class', "alert alert-danger")
     return false;
     }
-    
-    if (true){
-        document.querySelector('.container').innerHTML = "merci, pour votre message Mr  " + document.querySelector('#lastname').value
+  
+    if (true && homme.checked){
+       
+        document.querySelector('.status').innerHTML = "Merci de m'avoir contacté M "+ document.querySelector
+        ('#lastname').value
+        document.querySelector('.status').classList.add('success');   
+    }else{
+        document.querySelector('.status').innerHTML = "Merci de m'avoir contacté Mme "+ document.querySelector
+        ('#lastname').value
+        document.querySelector('.status').classList.add('success');   
     }
 }
-
-
 
 
 
