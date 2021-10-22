@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+<body>
+    
+
+   <div class="container mt-5 p-5" style="background: orange; color: black">
+     <h1 style="text-align: center; margin-bottom: 25px;">Formulaire de contact</h1>
+    <form class="form" method="post" onsubmit="return envoyer(event);">
+        <div class="d-flex genre">
+            <label for="title">Genre*</label>
+            <div class="mb-3 form-check mx-3">
+                <input type="radio" name="title" class="form-check-input" id="title_m">
+                <label class="form-check-label" for="title_m">M</label>
+            </div>
+            <div class="mb-3 formcheck mx-5">
+                <input type="radio" name="title" class="form-check-input" id="title_f">
+                <label class="form-check-label" for="title_f">Mme</label>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label for="firstname" class="form-label">Nom*:</label>
+          <input type="text" class="form-control" id="firstname" >
+        </div>
+        <div class="mb-3">
+            <label for="lastname" class="form-label">Prénom*:</label>
+            <input type="text" class="form-control" id="lastname" >
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email*:</label>
+            <input type="email" class="form-control" id="email" >
+          </div>
+          <div class="mb-3">
+            <label for="tel" class="form-label">Tel*:</label>
+            <input type="tel" class="form-control" id="tel" >
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message*:</label>
+            <textarea type="text" class="form-control" id="message" ></textarea>
+            <div id="emailHelp" class="form-text">10 caractéres minimaum.</div>
+          </div>
+          <div class="d-flex conditions">
+            <label for="title">Accepter les conditions*</label>
+            <div class="mb-3 form-check mx-3">
+                <input type="checkbox" class="form-check-input" id="agree">
+                <label class="form-check-label" for="agree">Aprouvée</label>
+            </div>
+            <div class="mb-3 formcheck mx-5">
+                <input type="checkbox" class="form-check-input" id="read">
+                <label class="form-check-label" for="read">Lue</label>
+            </div>
+        </div>
+        <p style="text-align: right;">*: Champs obligatoire</p>
+        <button type="submit" class="btn btn-primary">Valider</button>
+      </form>
+   </div>
+    <script src="./contact.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+ 
+</body>
+</html>
