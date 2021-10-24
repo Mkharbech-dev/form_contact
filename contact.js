@@ -35,16 +35,16 @@ function envoyer(event){
     var femme = document.querySelector('#title_f') 
     let myRegex = /^[a-zA-Z-\s]+$/;
     if(!homme.checked && !femme.checked){
-    alert('saisir une civilité ')
+    alert('Saisir une civilité ')
     return false;
     }
     if(document.querySelector('#firstname').value == ""){;
     document.querySelector('#firstname').style.border= '4px solid red '
     document.querySelector('#firstname').focus();
-    alert('entrer un nom ')
+    alert('Entrer un nom ')
     return false;
     }else if (myRegex.test(document.querySelector('#firstname').value) == false){
-    alert('saisir uniquement des lettres et des espaces dans le nom ')
+    alert('Saisir uniquement des lettres et des espaces dans le nom ')
     document.querySelector('#firstname').style.border= '4px solid red '
     document.querySelector('#firstname').focus();
     return false;       
@@ -54,10 +54,10 @@ function envoyer(event){
     if(document.querySelector('#lastname').value == ""){
     document.querySelector('#lastname').style.border= '4px solid red '
     document.querySelector('#lastname').focus();
-    alert('entrer un prénom ')
+    alert('Entrer un prénom ')
     return false;
     }else if (myRegex.test(document.querySelector('#lastname').value) == false){
-        alert('saisir uniquement des lettres et des espaces dans le prénom ')
+        alert('Saisir uniquement des lettres et des espaces dans le prénom ')
         document.querySelector('#lastname').style.border= '4px solid red '
         document.querySelector('#lastname').focus();
         return false;       
@@ -69,7 +69,7 @@ function envoyer(event){
     if(document.querySelector('#email').value == ""){
     document.querySelector('#email').style.border= '4px solid red '
     document.querySelector('#email').focus();
-    alert('entrer un email ')
+    alert('Entrer un email ')
     return false;
     }else{
     document.querySelector('#email').style.border= '4px solid green '
@@ -80,7 +80,7 @@ function envoyer(event){
     if(document.querySelector('#tel').value == ""){
     document.querySelector('#tel').style.border= '4px solid red '
     document.querySelector('#tel').focus();
-    alert('entrer un tel ')
+    alert('Entrer un tel ')
     return false;
     }else{
     document.querySelector('#tel').style.border= '4px solid green '
@@ -89,13 +89,13 @@ function envoyer(event){
 
 
     if(document.querySelector('#message').value == ""){
-    alert('entrer un texte svp ')
+    alert('Entrer un texte svp ')
     document.querySelector('#message').style.border= '4px solid red '
     document.querySelector('#message').focus();
     return false;
     }else if(document.querySelector('#message').value.length < 11){
         document.querySelector('#message').style.border= '4px solid red '
-        alert('entrer minimaum 10caractéres dans le message')
+        alert('Entrer minimaum 10caractéres dans le message')
     }else{
     document.querySelector('#message').style.border= '4px solid green '
     }
@@ -103,18 +103,18 @@ function envoyer(event){
     var read = document.querySelector('#read')
     var divFlex =  document.querySelector('.conditions')
     if(!agree.checked || !read.checked){
-    alert('accepter les deux conditions ')
+    alert('Accepter les deux conditions ')
     return false;
     }
   
     if (true && homme.checked){
        
         document.querySelector('.status').innerHTML = "Merci de m'avoir contacté M "+ document.querySelector
-        ('#lastname').value
+        ('#firstname').value
         document.querySelector('.status').classList.add('success');   
     }else{
         document.querySelector('.status').innerHTML = "Merci de m'avoir contacté Mme "+ document.querySelector
-        ('#lastname').value
+        ('#firstname').value
         document.querySelector('.status').classList.add('success');   
     }
 }

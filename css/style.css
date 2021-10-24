@@ -15,6 +15,7 @@
     background: red;
     color: white;
     animation: 0s linear 2.3s forwards status ;
+    ;
 }
 
 @keyframes status{
@@ -22,3 +23,17 @@
         visibility: hidden;
       }
 }
+@media screen and (max-width : 450px) {
+
+    .conditions{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .status{
+        font-size: 14px;
+    }
+    
+}
+
